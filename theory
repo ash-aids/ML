@@ -1,0 +1,60 @@
+Here’s a brief summary of each topic, covering the key points you’ll need for a practical exam:
+
+---
+
+### 1. **Principal Component Analysis (PCA)**
+   - **Purpose**: Dimensionality reduction by transforming data into a set of uncorrelated **principal components**.
+   - **Process**:
+     - **Standardize** the data.
+     - Calculate the **covariance matrix** and find its **eigenvalues** and **eigenvectors**.
+     - Select top components that capture the most **variance**.
+   - **Use Case**: Simplify datasets, like distinguishing wine types by key variables.
+
+### 2. **Regression Analysis**
+   - **Linear Regression**: Models a linear relationship between predictors and target.
+   - **Ridge and Lasso**: Add **L2** (Ridge) and **L1** (Lasso) penalties to avoid **overfitting** and handle multicollinearity.
+   - **Metrics**:
+     - **R-squared (R²)**: Variance explained by the model.
+     - **RMSE (Root Mean Squared Error)**: Average prediction error.
+   - **Use Case**: Predicting continuous values like Uber fares.
+
+### 3. **Support Vector Machines (SVM)**
+   - **Purpose**: Finds the best hyperplane to classify data.
+   - **Kernel Trick**: Transforms non-linear data for better separation (e.g., **RBF** kernel for complex data).
+   - **Parameters**: **C** (regularization) controls misclassification tolerance; **Gamma** defines influence scope.
+   - **Use Case**: Classifying images, like handwritten digits, into classes (0-9).
+
+### 4. **K-Means Clustering**
+   - **Purpose**: Unsupervised grouping of data points into **k clusters**.
+   - **Steps**:
+     - Randomly assign centroids.
+     - Assign points to nearest centroid and update centroids.
+     - Repeat until convergence.
+   - **Elbow Method**: Determines optimal \( k \) by finding the "elbow" in the plot of inertia vs. number of clusters.
+   - **Use Case**: Segment data, like clustering flower types in the Iris dataset.
+
+### 5. **Random Forest Classifier**
+   - **Purpose**: Ensemble of decision trees for classification, improving accuracy and reducing overfitting.
+   - **Key Parameters**:
+     - **n_estimators**: Number of trees.
+     - **max_features**: Number of features considered per split.
+     - **max_depth**: Tree depth control.
+   - **Feature Importance**: Identifies the most significant features.
+   - **Use Case**: Predicting categorical labels, like car safety ratings.
+
+### 6. **Reinforcement Learning (RL) with Q-Learning**
+   - **Purpose**: Training an agent to make sequential decisions in an environment to maximize cumulative rewards.
+   - **Key Components**:
+     - **Agent** interacts with **environment** through **states**, **actions**, and **rewards**.
+     - **Q-Learning**: Updates **Q-values** based on rewards and future value estimates.
+     - **Exploration vs. Exploitation**: Balances learning new actions vs. using known good actions.
+   - **Use Case**: Navigation tasks, like finding the shortest path in a maze.
+
+---
+
+Each technique serves different purposes:
+- **PCA and Clustering** for data exploration and dimensionality reduction.
+- **Regression and Random Forest** for prediction tasks.
+- **SVM and Q-Learning** for classification and sequential decision-making.
+
+Understanding these topics’ key parameters, evaluation metrics, and main applications will prepare you to implement and evaluate models effectively in a practical setting.
